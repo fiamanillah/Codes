@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+header{
+    background-color: rgb(67, 192, 241);
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    transition: 0.7s;
+}
+nav .logo{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .logo img{
+    width: 50px;
+    height: 35px;
+
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+
+}
+nav ul li{
+    list-style-type: none;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li:hover{
+    background-color: cadetblue;
+}
+nav ul li a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+nav .toggleBtn{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .toggleBtn button{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+nav .toggleBtn button .fa-bars{
+    display: block;
+}
+nav .toggleBtn button .fa-times{
+    display: none;
+}
+nav .open button .fa-bars{
+    display: none;
+}
+nav .open button .fa-times{
+    display: block;
+}
+
+
+.sticky{
+    height: 50px;
+    background-color: white;
+}
+.sticky nav .logo{
+    height: 50px;
+}
+
+.sticky .menu ul li{
+    height: 50px;
+    color: black;
+}
+.sticky .menu ul li a{
+    color: black;
+}
+.sticky nav .toggleBtn{
+    height: 50px;
+}
+.homeSection{
+    background-image: url(./assets/images/Background\ 1.svg);
+    width: 100%;
+    height: 1000px;
+}

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: #cfcfcf;
+    
+
+}
+.wrapper{
+    width: 80%;
+    background: aquamarine;
+    margin: auto;
+    border: 1px solid black;
+}
+header{
+    background: aqua;
+    text-align: center;
+}
+
+nav{
+    background: cornflowerblue;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    padding: 10px 8px;
+    border-right: 1px solid gray;
+    transition: .5s;
+}
+nav ul li:hover{
+    background: slateblue;
+}
+nav ul li:active{
+    background: rgb(34, 0, 255);
+}
+nav ul li a{
+    text-decoration: none;
+    color: cornsilk;
+}
+
+section{
+    display: flex;
+}
+section .left{
+    width: 85%;
+}
+section .left .left-top{
+    margin: 20px 10px;
+}
+section .left .left-top .image{
+    width: 300px;
+    float: left;
+}
+section .left .left-top .image img{
+    width: 100%;
+}
+section .left .left-top p{
+    text-align: justify;
+}
+section .left .left-bottom ul{
+    padding: 20px 50px;
+}
+section .right{
+    width: 15%;
+    background: #dcfaab;
+}
+section .right ul{
+    list-style-type: none;
+}
+section .right ul li{
+    padding: 10px;
+    transition: 0.5s;
+}
+section .right ul li:hover{
+    background: yellow;
+}
+section .right ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+footer{
+    background: tomato;
+    text-align: center;
+}
+
+.a{
+    background-color: #f77878;
+}
+
+
+.test-box{
+    width: 200px;
+    height: 100px;
+    background: red;
+}

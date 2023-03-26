@@ -1,0 +1,100 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+
+
+body{
+    background: #333;
+    font-family: 'Merriweather', serif;
+    color: rgb(167, 167, 167);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+  background-color: antiquewhite;
+  color: #242424;
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+  transform: rotate(0deg);
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+}
+.container.show-nav{
+  transform: rotate(-20deg);
+  transform-origin: top left;
+
+
+}
+
+.circle-container{
+  position: fixed;
+  top: -120px;
+  left: -110px;
+}
+
+.circle{
+  background-color: #ff7979;
+  height: 190px;
+  width: 190px;
+  border-radius: 55%;
+  position: fixed;
+  transition: transform .5s linear;
+}
+.rotate-circle{
+  transform: rotate(-90deg);
+}
+.circle button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+.circle button:focus{
+  outline: none;
+}
+.circle button#open{
+  left: 60%;
+}
+.circle button#close{
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.content img{
+  max-width: 100%;
+}
+.content{
+  margin: auto;
+}
+
+nav{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+nav ul{
+  list-style-type: none;
+  padding-left: 10px;
+}
+nav ul li{
+  text-transform: uppercase;
+  color: #fff;
+  margin: 30px 0;
+  transform: translateX(-140%);
+  transition-delay: .6s;
+  transition: transform 0.4s ease-in;
+}
+
+.container.show-nav + nav li{
+  transform: translateX(0);
+  transition-delay: 0.3;
+}

@@ -1,0 +1,39 @@
+@media screen and (max-width: 800px){
+    nav ul{
+
+        position: absolute;
+        top: 0;
+        right: -100vw;
+        background-color: blueviolet;
+        display: block;
+        width: 100%;
+        height: 500px;
+        transition: 0.5s;
+    
+    }
+    nav ul li{
+        list-style-type: none;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    nav .toggleBtn{
+        display: flex;
+    }
+    .sticky .menu ul li{
+        height: 50px;
+    }
+    .sticky .menu ul li a{
+        color: blanchedalmond;
+    }
+    .sticky nav .toggleBtn{
+        height: 50px;
+    }
+    nav .show{
+        right: 0; 
+    }
+}

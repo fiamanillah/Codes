@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section{
+    background: url("img1.jpg") no-repeat center center /cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(30px);
+    position: absolute;
+
+}
+
+.loading-text{
+    z-index: 1;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+body{
+    background-color: rgb(80, 212, 252);
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech', sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 350px;
+    height: 360px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: hsla(240, 5%, 41%, 0.5) 0px 9px 20px 0px;
+    overflow: hidden;
+
+}
+.switch-btn{
+    display: flex;
+}
+.switch-btn button{
+    width: 100px;
+    margin: 10px auto 0 auto;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    transition: .3s;
+    cursor: pointer;
+}
+.switch-btn button:hover{
+    transform: scale(1.1);
+}
+.switch-btn button:active{
+    transform: scale(.9);
+}
+.switch-btn .active{
+    border-bottom: 1px solid black;
+}
+
+.form-container{
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    transition: transform .5s ease-in;
+}
+.slide-form{
+    transform: translateX(350px);
+}
+.log-in{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: absolute;
+    margin-top: 50px;
+    left:-350px;
+}
+.log-in input{
+    width: 300px;
+    height: 30px;
+    margin: 30px auto;
+    border: none;
+    border-bottom:1px solid rgb(0, 0, 0);
+    background: transparent;
+    
+}
+.log-in input:focus{
+    outline: none;
+}
+
+.log-in button{
+    width: 100px;
+    margin: auto;
+    height: 30px;
+    border: none;
+    background: black;
+    color: blanchedalmond;
+    transition: .3s;
+}
+.log-in button:hover{
+    transform: scale(1.1);
+}
+.log-in button:active{
+    transform: scale(.9);
+}
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: absolute;
+    left: 0px;
+}
+.sign-up input{
+    width: 300px;
+    height: 30px;
+    margin: 10px auto;
+    border: none;
+    border-bottom:1px solid rgb(0, 0, 0);
+    background: transparent;
+}
+.sign-up input:focus{
+    outline: none;
+}
+.sign-up button{
+    width: 100px;
+    margin: 10px auto;
+    height: 30px;
+    border: none;
+    background: black;
+    color: blanchedalmond;
+    transition: .3s;
+}
+.sign-up button:hover{
+    transform: scale(1.1);
+}
+.sign-up button:active{
+    transform: scale(.9);
+}

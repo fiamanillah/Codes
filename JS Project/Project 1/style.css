@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+
+body{
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.container .pannel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 30px;
+    color: azure;
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    cursor: pointer;
+    overflow: hidden;
+    transition: height 1s ease;
+}
+.container .pannel h3{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    background: rgba(97, 97, 97, 0.5);
+}
+.container .active{
+    width: 100%;
+    height: 90vh;  
+}
