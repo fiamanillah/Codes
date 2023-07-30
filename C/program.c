@@ -8,3 +8,4 @@ int main(int argc, char const *argv[])
     printf("Inputed number is: %d",X);
     return 0;
 }
+
