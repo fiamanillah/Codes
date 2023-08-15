@@ -11,7 +11,7 @@ function isVowel (sentence){
     }
 
     return vowelCount;
-};
+}
 
 
 let x = (isVowel("I love to code in javascript"));
