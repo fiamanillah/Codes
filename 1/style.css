@@ -1,6 +1,12 @@
+@font-face {
+    font-family: x;
+    src: url(x.ttf);
+}
+
 body{
     background-color: #505050;
     color: white;
+    font-family: x;
 }
 
 button{
