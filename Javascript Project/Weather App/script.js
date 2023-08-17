@@ -76,8 +76,3 @@ search.addEventListener("keypress", (event)=>{
       }
 })
 
-if (search.value === "Dimla") {
-        document.querySelector(".weather").style.display ="block";
-        document.getElementById("err").style.display= "none";
-        document.getElementById("dimla").style.display= "block";
-}
