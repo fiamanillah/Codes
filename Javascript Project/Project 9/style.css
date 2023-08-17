@@ -51,6 +51,7 @@ body{
     border-radius: 5px;
     font-size: 18px;
     font-weight: bolder;
+    cursor: pointer;
 }
 .container button:active{
     opacity: 0.9;
