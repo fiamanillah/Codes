@@ -47,7 +47,15 @@ async function checkWeather(city){
         document.getElementById("err").style.display= "none";
     }
 
-    
+    if (search.value === "Dimla") {
+        document.querySelector(".weather").style.display ="block";
+        document.querySelector(".temp img").style.display ="none";
+        document.querySelector(".otherInfo").style.display ="none";
+        document.getElementById("err").style.display= "none";
+        document.getElementById("dimla").style.display= "block";
+        document.querySelector("#temp").style.display= "none";
+        document.querySelector("#city").style.display= "none";
+}
 
 
     console.log(data);
@@ -67,3 +75,9 @@ search.addEventListener("keypress", (event)=>{
         btn.click();
       }
 })
+
+if (search.value === "Dimla") {
+        document.querySelector(".weather").style.display ="block";
+        document.getElementById("err").style.display= "none";
+        document.getElementById("dimla").style.display= "block";
+}
