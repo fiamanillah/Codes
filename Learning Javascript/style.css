@@ -28,3 +28,8 @@ button{
 button:hover{
     transform: scale(1.05);
 }
+
+p{
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(255, 226, 187);
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.btn{
+    border: 0px;
+}
+
