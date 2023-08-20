@@ -1,12 +1,180 @@
-body{
-    background-color: rgb(255, 226, 187);
-    margin: auto;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+::selection {
+    color: white;
+    background: var(--main-bg-color);
+}
+
+:root {
+    --main-bg-color: #FFBFBF;
+    --sec-bg-color: #A8DF8E;
+    --complete-bg-color: #FFE5E5;
+    --button-bg-color: #ED7B7B;
+    --task-bg-color: #F3FDE8;
+    --text-color: rgb(43, 43, 43);
+}  
+
+body{
+    background-color: rgb(255, 226, 187);
+
 
 }
 
-.btn{
-    border: 0px;
+
+
+
+.toDoApp{
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
+.topSection{
+    background: var(--sec-bg-color);
+    padding: 20px 30px;
+}
+.inputField{
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+.inputField input{
+    border: none;
+    outline: none;
+    width: 80%;
+    background: transparent;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.inputField .btn{
+    width: 20%;
+    border: none;
+    outline:none;
+    border-radius: 10px;
+    background-color: var(--button-bg-color);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+#err{
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.bottomSection{
+    overflow-y: scroll;
+    display: block;
+    min-height: 0px;
+    max-height: 400px;
+}
+
+.bottomSection::-webkit-scrollbar {
+    width: 0px;
+}
+
+.taskList li{
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--task-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.taskList li.done{
+    background-color: var(--complete-bg-color);
+}
+
+.taskList li.done .task span{
+    text-decoration: line-through;
+    transition: 0.3s;
+}
+
+.taskList li .task span:focus{
+    background-color: var(--sec-bg-color);
+}
+
+.taskList li .task{
+    display: flex;
+}
+
+.taskList li .task i{
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 2px solid var(--sec-bg-color);
+    cursor: pointer;
+}
+
+.taskList li.done .task i{
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 2px solid var(--sec-bg-color);
+    background-color: var(--sec-bg-color);
+    cursor: pointer;
+}
+
+
+.taskList li .task span{
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.taskList li.done .task span{
+    text-decoration: line-through;
+}
+
+.taskList li button{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+    transition: .3s;
+}
+
+.taskList li button:hover{
+    background: rgba(163, 163, 163, 0.514);
+}
