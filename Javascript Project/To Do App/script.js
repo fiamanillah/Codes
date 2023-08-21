@@ -9,7 +9,6 @@ window.onload= ()=>{
     input.focus();
 }
 
-
 let addTask = addBtn.onclick = ()=>{
     if (input.value == "") {
         err.style.display="block";
@@ -57,22 +56,9 @@ input.addEventListener("keypress", (event)=>{
 
 let done = ()=>{
     let element =  document.activeElement;
-
    element.parentElement.parentElement.classList.toggle("done");
-
     element.firstChild.nextSibling.classList.toggle("fa-circle-xmark");
-
-
     let x = element.parentElement.previousSibling.previousSibling.lastChild
-
-    // function myFunction() {
-    //     const attr = document.createAttribute("contenteditable");
-    //     attr.value = "true";
-       
-    //     x.setAttributeNode(attr); 
-    // }
-
-    // myFunction();
 
     if (x.hasAttribute("contenteditable")) {
         x.removeAttribute("contenteditable");
@@ -80,23 +66,13 @@ let done = ()=>{
         x.setAttribute("contenteditable", "true")
     }
 
-
-
     saveData()
 }
-
-
-
-
 
 let dlt = ()=>{
     document.activeElement.parentElement.parentElement.remove();
     saveData()
 }
-
-
-
-
 
 function saveData(){
     localStorage.setItem("data", taskList.innerHTML)
