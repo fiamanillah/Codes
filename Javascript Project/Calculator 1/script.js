@@ -1,20 +1,10 @@
 const input = document.querySelector(".input")
 const btn  = document.querySelectorAll("button");
 
-
 let inputValue = "";
 arr = Array.from(btn);
-
 arr.forEach( x => {
-
-   
-  
-  
-  
-  
     x.addEventListener('click', (e)=>{
-
-
         if (e.target.innerHTML == ' = ' ) {
             inputValue = eval(inputValue);
             input.value = inputValue;
@@ -28,12 +18,6 @@ arr.forEach( x => {
         else{
             inputValue += e.target.innerHTML;
             input.value = inputValue;
-        }
-
-
-        
+        }      
     })
 });
-
-
-console.log(input);

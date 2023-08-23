@@ -31,7 +31,6 @@ body{
 
 }
 
-
 .input{
     color: #0F2027;
     background-color: transparent;
@@ -53,7 +52,6 @@ input::placeholder{
     color: #0F2027;
 }
 
-
 .btnArea{
     display: flex;
     justify-content: space-evenly;
@@ -64,7 +62,6 @@ input::placeholder{
     display: flex;
     flex-direction: column;
 }
-
 
 button{
     color: #ffffff;
@@ -86,7 +83,6 @@ button{
     margin: 5px;
     cursor: pointer;
 }
-
 
 button:hover {
     box-shadow: 0 0 #fff;
