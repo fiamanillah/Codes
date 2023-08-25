@@ -9,6 +9,7 @@
     color: var(--text-color);
 }
 
+
 ::selection {
     color: white;
     background: var(--main-bg-color);
