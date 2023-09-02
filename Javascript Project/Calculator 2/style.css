@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    max-width: 300px;
+    background: lightblue;
+    border-radius: 5px;
+
+}
+
+.inputBox{
+    background: lightcoral;
+    padding: 25px 5px;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+
+.inputBox input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+.inputBox input::placeholder{
+    color: black;
+}
+
+.btnBox{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin: 20px 10px;
+}
+
+.btnBox button{
+    border: none;
+    padding: 15px 0;
+    box-shadow:  0 0 5px rgba(101, 101, 101, 0.626);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    background: white;
+
+}
+
+.btnBox button:hover{
+    background: rgb(206, 206, 206);
+}
+
+.btnAC{
+    grid-column: 1 / 3;
+}
+
+.btnEcual{
+    grid-row: 4/6;
+    grid-column: 4/5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
