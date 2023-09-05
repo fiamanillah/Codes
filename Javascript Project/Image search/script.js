@@ -5,8 +5,6 @@ const apiKey = "CSbf0U8xuEMyG7bLtAQ_6xX3yUpPdC0Y8v5kGNRsIns",
     imgConatiner = document.querySelector(".imgConatiner");
     search = document.querySelector(".search");
 
-
-
 let query = "",
     page = 1;
 
@@ -18,9 +16,6 @@ async function searchImage() {
     const data = await responce.json();
 
     let results = data.results;
-
-
-   
 
     page === 1 ? imgConatiner.innerHTML="": "";
 
@@ -38,18 +33,13 @@ async function searchImage() {
 
         imgConatiner.appendChild(box);
     })
-
-
 page++;
 
 if (page > 1) {
     showMore.style.display = "block";
 }
 
-
-    console.log(results);
 };
-
 
 search.onsubmit=(event)=>{
     event.preventDefault();
