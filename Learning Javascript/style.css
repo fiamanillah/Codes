@@ -33,3 +33,11 @@ p{
     border: none;
     outline: none;
 }
+
+.map{
+    height: 300px;
+    width: 400px;
+    border: 2px solid #1e1919;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}

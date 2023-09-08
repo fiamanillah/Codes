@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box{
+    height: 400px;
+    width: 300px;
+    background-color: blueviolet;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.text{
+    height: 200px;
+    width: 150px;
+    background-color: aquamarine;
+    top: 50%;
+    left: 50%;
+    transform: translateZ(50px) translateX(50%) translateY(50%);
+
+}

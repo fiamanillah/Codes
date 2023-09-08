@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body{
+    height: 100vh;
+    cursor: none;
+    background-color: darkgrey;
+    position: relative;
+}
+
+.cursorDot{
+    width: 5px;
+    height: 5px;
+    background-color: beige;
+}
+
+.cursorOutline{
+    width: 30px;
+    height: 30px;
+    border: 3px solid beige;
+}
+
+.cursorDot,
+.cursorOutline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%) ;
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+
+
+.cursorClickEffect{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border: 3px solid beige;
+    border-radius: 50%;
+    animation: scaleUp 0.7s ease forwards;
+}
+
+@keyframes scaleUp {
+    from{
+        opacity: 1;
+        height: 0px;
+        width: 0px;   
+    }
+    to{
+        opacity: 0;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+button{
+    height: 40px;
+    width: 80px;
+    border: none;
+    outline: none;
+    background-color: aqua;
+    margin: 100px;
+}
+
+button:hover .cursorDot{
+    height: 10px;
+    width: 10px;
+}
