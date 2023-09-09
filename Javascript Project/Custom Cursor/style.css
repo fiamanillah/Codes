@@ -15,13 +15,14 @@ body{
 .cursorDot{
     width: 5px;
     height: 5px;
-    background-color: beige;
+    background-color: white;
 }
 
 .cursorOutline{
     width: 30px;
     height: 30px;
-    border: 3px solid beige;
+    border: 3px solid white;
+    transition: 0.2s ease;
 }
 
 .cursorDot,
@@ -33,6 +34,7 @@ body{
     border-radius: 50%;
     z-index: 1;
     pointer-events: none;
+    mix-blend-mode: difference;
     
 }
 
@@ -70,7 +72,7 @@ button{
     margin: 100px;
 }
 
-button:hover .cursorDot{
-    height: 10px;
-    width: 10px;
+.button:hover ~ .cursorOutline{
+    height: 50px;
+    width: 50px;
 }

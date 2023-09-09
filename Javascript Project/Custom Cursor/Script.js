@@ -11,10 +11,9 @@ window.addEventListener('mousemove', (e)=>{
     cursorOutline.animate({
         left: `${posX}px`,
         top: `${posY}px`
-    },{duration: 300, fill: "forwards"})
+    },{duration: 500, fill: "forwards"})
     
 })
-
 
 
 window.addEventListener("click", (e)=>{
@@ -28,5 +27,22 @@ window.addEventListener("click", (e)=>{
         cursorClickDiv.remove();
     }, 500)
 
+
+    cursorOutline.animate([
+        {
+            transform: `scale(2) translate(-25%, -25%)`
+        },{
+            transform: `scale(1) translate(-50%, -50%)`
+        }
+    ],{duration: 200, fill: "forwards"})
+
+
+    // cursorOutline.style.transform= `scale(2) translate(-25%, -25%)` 
+    // setTimeout(()=>{
+    //     cursorOutline.style.transform= `scale(1) translate(-50%, -50%)` 
+    // }, 100)
+
 })
+
+
 

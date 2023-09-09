@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 10px solid gray;
+    border-top-color:black ;
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    100%{
+        rotate: 360deg;
+    }
+}
