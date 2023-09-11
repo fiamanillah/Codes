@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "atropos": "^2.0.2",
+    "luxy.js": "^0.1.0",
+    "paroller.js": "^1.4.7",
     "rolly.js": "^0.4.0"
   }
 }
