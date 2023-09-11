@@ -1,5 +1,6 @@
 {
-  "devDependencies": {
-    "typescript": "^5.1.6"
+  "dependencies": {
+    "atropos": "^2.0.2",
+    "rolly.js": "^0.4.0"
   }
 }
