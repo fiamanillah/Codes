@@ -28,13 +28,13 @@ window.addEventListener("click", (e)=>{
     }, 500)
 
 
-    cursorOutline.animate([
-        {
-            transform: `scale(2) translate(-25%, -25%)`
-        },{
-            transform: `scale(1) translate(-50%, -50%)`
-        }
-    ],{duration: 200, fill: "forwards"})
+    // cursorOutline.animate([
+    //     {
+    //         transform: `scale(2) translate(-25%, -25%)`
+    //     },{
+    //         transform: `scale(1) translate(-50%, -50%)`
+    //     }
+    // ],{duration: 200, fill: "forwards"})
 
 
     // cursorOutline.style.transform= `scale(2) translate(-25%, -25%)` 

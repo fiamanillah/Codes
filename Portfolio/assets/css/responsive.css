@@ -1,0 +1,204 @@
+
+@media screen and (max-width:1024px){
+    .homeContent{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .homeContent_1{
+        margin-left: 0;
+        padding: 0;
+        height: 40%;
+    }
+
+    .homeContent_2{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .homeContent_2 img{
+        width: 100%;
+    }
+    .line{
+        top: 125px;
+    }
+    .sectionIndicator{
+        top: 125px;
+    }
+
+
+    .projectContainer{
+        grid-template-columns: auto auto;
+    }
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    *{
+        cursor: default;
+    }
+    .cursorDot{
+        display: none;
+    }
+    .cursorOutline{
+        display: none;
+    }
+    .menuBtn{
+        display: block;
+    }
+    .navMenu{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        background: linear-gradient(180deg, var(--dark-mode-bg) 0%, var(--dark-mode-bg) 70%, rgba(0,0,0,0) 100%);
+        text-align: center;
+        z-index: -1;
+        transition: .2s ease;
+        
+    }
+
+    .navMenu.active{
+        height: 250px;
+    }
+
+
+
+    .navMenu ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .navMenu ul li{
+        padding: 10px 0;
+    }
+    .navMenu ul li a{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+
+    .line{
+        left: 6%;
+        top: 50px;
+    }
+    
+    .mouseScrollBtn{
+        position: absolute;
+        top: 50%;
+        left: 6%;
+    }
+    .sectionIndicator{
+        top: 50px;
+        left: calc(6% + 10px);
+    }
+    .sectionButtetPoint{
+        left: 6%;
+    }
+    .homeContent_1{
+        padding-top: 0px;
+
+    }
+    .homeContent_2_Card{
+        height: 50vh;
+        max-height: 400px;
+    }
+    .projectContainer{
+        grid-template-columns: auto;
+    }
+
+    .contactContainer{
+        justify-content: space-around;
+    }
+    .socialIcons{
+        width: 10%;
+    }
+    .socialIcons .socialIcon span{
+        display: none;
+    }
+    .contactFormWrapper{
+        width: 80%;
+    }
+    .socialIcons a{
+        width: 95%;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:440px){
+    .home_row_1 h1{
+        font-size: 1.5rem;
+    }
+    .home_row_1 h1 span{
+        color: var(--secondary-color);
+        font-size: 2rem;
+    }
+    .home_row_1 h1 span strong{
+        color: var(--primery-color);
+        font-size: 3rem;
+    }
+    .home_row_2 h1{
+        font-size: 1rem;
+    }
+    .projectCard{
+        width: 250px;
+    }
+    .projectCard.projectCardVartical{
+        width: 250px;
+        height: 350px;
+    }
+    .aboutLine{
+        padding-left: 13%;
+    }
+    .dot{
+        display: none;
+    }
+   
+
+    .contactContainer{
+        flex-direction: column;
+        width: 80%;
+        padding-left: 15px;
+    }
+    .socialIcons{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .socialIcons .socialIcon span{
+        display: block;
+    }
+    .socialIcons .socialIcon{
+        width: auto;
+    }
+    .socialIcons a{
+        width: 100%;
+    }
+    
+    .contactFormWrapper{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:320px){
+    .projectCard{
+        width: 200px;
+    }
+}
+
+
