@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(29, 29, 29);
+}
+
+.container{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    border-radius: 10px;
+    margin: 100px auto 0;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+.search input{
+    border-radius: 10px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    height: 45px;
+    width: 100%;
+}
+
+.search button{
+    height: 45px;
+    width: 45px;
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+
+}
+.search button img{
+    height: 80%;
+    width: 80%;
+}
+
+
+.temp{
+    text-align: center;
+    color: #2f3737;
+}
+
+.temp h1{
+    font-size: 40px;
+    margin-top: -30px;
+}
+
+.temp img{
+    width: 180px;
+}
+
+
+.otherInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    color: #2f3737;
+}
+
+
+.col{
+    display:flex;
+    justify-content: space-between;
+}
+
+.col img{
+    width: 40px;
+    height: 40px;
+}
+
+.col div{
+    text-align: left;
+    margin-top: -10px;
+    padding-left: 15px;
+}
+
+.weather{
+    display: none;
+}
+
+#err{
+    display: none;
+}
+/* 
+#dimla{
+    display: none;
+} */

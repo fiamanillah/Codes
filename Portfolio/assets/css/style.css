@@ -604,8 +604,28 @@ section:nth-child(odd){
     transform: perspective(1000px);
     background-image: url(https://picsum.photos/id/26/300/200);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     margin-top: 50px;
+}
+
+.projectElement_1 .projectCard{
+    background-image: url(../images/projectScreenshot/Geeksplore.png);
+}
+.projectElement_2 .projectCard{
+    background-image: url(../images/projectScreenshot/calculator1.png);
+}
+.projectElement_3 .projectCard{
+    background-image: url(../images/projectScreenshot/toDo.png);
+}
+.projectElement_4 .projectCard{
+    background-image: url(../images/projectScreenshot/WeatherApp.png);
+}
+.projectElement_5 .projectCard{
+    background-image: url(../images/projectScreenshot/passgen.png);
+}
+.projectElement_6 .projectCard{
+    background-image: url(../images/projectScreenshot/ImgSearch.png);
 }
 .projectCard .projectCardOverlay{
     position: absolute;

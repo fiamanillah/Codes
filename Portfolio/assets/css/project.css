@@ -236,14 +236,18 @@ body{
 
 .projectDetailsRow2 p{
     margin: 20px 0;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+}
+.projectDetailsRow2 p:first-child{
+    color: var(--dark-mode-semicolon);
 }
 
 .projectDetailsRow2 h1{
     margin: 20px 0;
     font-size: 2.2rem;
     font-weight: 700;
+    color: var(--secondary-color);
 }
 
 .projectDetailsRow3{
