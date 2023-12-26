@@ -38,6 +38,30 @@ let questions = [
         choiceC: 'Correct',
         correct: 'C'
     },
+    {
+        question: 'JS stands for',
+        imgSrc: './img/js.png',
+        choiceA: 'Worng',
+        choiceB: 'Worng',
+        choiceC: 'Correct',
+        correct: 'C'
+    },
+    {
+        question: 'JS stands for',
+        imgSrc: './img/js.png',
+        choiceA: 'Worng',
+        choiceB: 'Worng',
+        choiceC: 'Correct',
+        correct: 'C'
+    },
+    {
+        question: 'JS stands for',
+        imgSrc: './img/js.png',
+        choiceA: 'Worng',
+        choiceB: 'Worng',
+        choiceC: 'Correct',
+        correct: 'C'
+    }
 ]
 
 
