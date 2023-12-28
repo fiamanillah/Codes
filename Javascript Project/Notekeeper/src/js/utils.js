@@ -14,7 +14,7 @@ const getGreetingMsg = (currentHour)=>{
     currentHour < 12 ? 'Morning':
     currentHour < 15 ? 'Noon':
     currentHour < 17 ? 'Afternoon':
-    currentHour < 20 ? 'Evining':
+    currentHour < 20 ? 'Evening':
     'Night';
 
     return `Good ${greeting}`
@@ -35,8 +35,14 @@ let makeElemEditable = function(element){
     element.focus();
 };
 
+const generateID = function (){
+    return new Date().getTime().toString();
+};
+
+
 export{addEventOnElements,
     getGreetingMsg,
     activeNotebook,
-    makeElemEditable
+    makeElemEditable,
+    generateID
 }

@@ -1,7 +1,8 @@
 
 
-'use strict';
+// 'use strict';
 
+import{generateID} from "./utils.js";
 
 let noteKeeperDB = {};
 
@@ -37,13 +38,23 @@ export let db = {
 
     post: {
 
-        function(name){
+        notebook(name){
             readDB();
+
+            const noteBookData = {
+                id: generateID(),
+                name,
+                note: []
+            }
+
+            console.log(noteBookData)
 
             writeDB();
         }
 
     }
+
+
 
 
 };

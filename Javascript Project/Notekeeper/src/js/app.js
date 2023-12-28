@@ -82,10 +82,12 @@ const shownotebookfield = function (){
 
 $noteCreateBtn.addEventListener('click', shownotebookfield);
 
-const createNoteBook = (event)=>{
+const createNoteBook = function (event){
     if (event.key === 'Enter') {
         event.preventDefault();
         console.log(event.key);
+        db.post.notebook( this.textContent || 'Untitled');
+
     } else {
         
     }
