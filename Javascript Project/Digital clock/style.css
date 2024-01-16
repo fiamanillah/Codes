@@ -16,7 +16,7 @@ body{
 .container{
     display: flex;
     position: relative;
-
+    width: 500px;
 }
 
 .container::before{
