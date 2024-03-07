@@ -17,11 +17,9 @@ let init = ()=>{
         noteKeeperDB.notebook = [];
         localStorage.setItem('noteKeeperDB', JSON.stringify(noteKeeperDB))
     }
-
 }
 
 init();
-
 
 const readDB = ()=>{
     noteKeeperDB = JSON.parse(localStorage.getItem('noteKeeperDB'));
@@ -32,29 +30,18 @@ const writeDB = ()=>{
 }
 
 
-
 export let db = {
-
-
     post: {
-
         notebook(name){
             readDB();
-
             const noteBookData = {
                 id: generateID(),
                 name,
                 note: []
             }
-
             console.log(noteBookData)
-
             writeDB();
         }
-
     }
-
-
-
 
 };

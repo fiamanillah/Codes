@@ -801,7 +801,7 @@ body{
   --state-layer-bg : var(--on-secondary-container);
 } 
 
-.nav-item .text{flex-grow: 1;}
+.nav-item .text{flex-grow: 1; cursor: text;}
 
 .nav-item .icon-btn{
   opacity: 0;
