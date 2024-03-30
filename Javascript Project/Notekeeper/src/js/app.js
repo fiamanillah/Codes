@@ -4,9 +4,10 @@
 
 /*<========================>
 imports
-<========================>*/ 
+<========================>*/
 
-import { addEventOnElements,
+import {
+    addEventOnElements,
     getGreetingMsg,
     activeNotebook,
     makeElemEditable
@@ -18,21 +19,21 @@ import { db } from "./db.js";
 
 /*<========================>
 MainCode
-<========================>*/ 
+<========================>*/
 
 const $sidebar = document.querySelector('[data-sidebar]');
 const $sidebarTogglers = document.querySelectorAll('[data-sidebar-toggler]');
 const $Overlay = document.querySelector('[data-sidebar-overlay]')
 
 
-/*<======================== sidebar toggle =====================>*/ 
+/*<======================== sidebar toggle =====================>*/
 
-addEventOnElements($sidebarTogglers, 'click', ()=>{
+addEventOnElements($sidebarTogglers, 'click', () => {
     $sidebar.classList.toggle('active');
     $Overlay.classList.toggle('active');
 })
 
-/*<======================== Greeting Msg =====================>*/ 
+/*<======================== Greeting Msg =====================>*/
 
 const $greeting = document.querySelector('[data-greeting]');
 const currentHour = new Date().getHours();
@@ -45,19 +46,19 @@ $currentDate.textContent = new Date().toDateString().replace(' ', ', ');
 
 const $toolTipEl = document.querySelectorAll('[data-tooltip]');
 
-$toolTipEl.forEach($elem=>{Tooltip($elem)});
+$toolTipEl.forEach($elem => { Tooltip($elem) });
 
 
 
 
 
-/*<======================== Create Notebook =====================>*/ 
+/*<======================== Create Notebook =====================>*/
 
 
 const $sidebarList = document.querySelector('[data-sidebar-list]');
 const $noteCreateBtn = document.querySelector('[data-add-notebook]');
 
-const shownotebookfield = function (){
+const shownotebookfield = function () {
     const $navItem = document.createElement('div');
 
     $navItem.classList.add('nav-item');
@@ -82,13 +83,14 @@ const shownotebookfield = function (){
 
 $noteCreateBtn.addEventListener('click', shownotebookfield);
 
-const createNoteBook = function (event){
+const createNoteBook = function (event) {
     if (event.key === 'Enter') {
         event.preventDefault();
         console.log(event.key);
-        db.post.notebook( this.textContent || 'Untitled');
+        db.post.notebook(this.textContent || 'Untitled');
 
     } else {
-        
+
     }
 };
+
