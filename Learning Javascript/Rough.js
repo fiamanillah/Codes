@@ -1,5 +1,3 @@
-let x = 'Bitu';
-let y = 'Alex';
-let z = 'John';
+let x = [[1, 2], [3, [10, [20, 21], 11], 4], [5, 6]];
 
-console.table([x,y,z])
+console.log(x.flat(3))
