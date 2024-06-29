@@ -1,3 +1,14 @@
-let x = [[1, 2], [3, [10, [20, 21], 11], 4], [5, 6]];
+let z = ["Banana", "Mango", "Apple", "Orange"];
 
-console.log(x.flat(3))
+let x = z.entries();
+
+
+// for (let y of x) {
+//     console.log(y);
+// }
+
+
+for (let i = 0; i < x.length; i++) {
+    let y = + x
+    console.log(y);
+}
