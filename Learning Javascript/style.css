@@ -25,19 +25,23 @@ button{
     font-family: x;
 }
 
-button:hover{
-    transform: scale(1.05);
+button:active{
+    transform: scale(0.95);
 }
 
-p{
-    border: none;
-    outline: none;
+.product-container{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 0;
 }
 
-.map{
-    height: 300px;
-    width: 400px;
-    border: 2px solid #1e1919;
+.product-container li{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid grey;
     border-radius: 20px;
-    box-shadow: 0 0 20px black;
 }
